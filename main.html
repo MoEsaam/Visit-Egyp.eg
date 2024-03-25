@@ -1,0 +1,257 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyle.css">
+    <script src="mainjs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Visit Egypt</title> 
+</head>
+<body>
+    <div class="FullBage">
+
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                <i class="fa-solid fa-mountain-sun"></i>    
+                <h1 class="head">Visit Egypt</h1>
+                </div>
+                <ul>
+                    <li><a href="#Home" id="help">Home</a></li>
+                    <li>
+                        <!-- for the drop down list on this element  -->
+                        <a href="#Places to go" id="home" onclick="open_close_PTG()">Places to go  <i class="fas fa-caret-down"></i>  </a>  <!--el (i) de 3shan ne3ml el shakl bta3 el drop down menu-->
+
+                    </li>
+                    <li><a href="#Things to do" id="services" onclick="open_close_TTD()">Things to do <i class="fas fa-caret-down"></i> </a></li>                 
+                    <li><a href="#about us" id="about">About us</a></li>
+                    <li>
+                        
+                        <input type="text" placeholder="search here.." class="textfield">
+                        <button class="btn">
+                            <i class="fas fa-search"></i> 
+                            
+                        </button>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars" calss="menu-btn"></i>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+        <!-- dlo2ty ha3ml div gowah el elements el hatb2a gowa el drop list bta3et el places to go -->
+        <div class="PTG-container" id="PTG-container">
+            <a href="mo7afzat/Cairo/Egyptian Museum/main.html" class="PTG-item">
+                <img src="mo7afzat/Cairo/Egyptian Museum/img/The_Egyptian_Museum.jpg" alt="orange tree" /><p>The Egyptian Museum</p>
+            </a>
+            <a href="mo7afzat/Cairo/Muizz Street/main.html" class="PTG-item">
+                <img src="mo7afzat/Cairo/Muizz Street/img/s1.jpg" alt="orange tree" /><p>Muizz Street</p>
+            </a>
+            <a href="mo7afzat/Alexandria/HTML/ALexandria_Library.html" class="PTG-item">
+                <img src="mo7afzat/Alexandria/Places/Alexandria_Library/photo/2022082510565869475_.jpg" alt="orange tree" /><p>ALexandria Library</p>
+            </a>
+            <a href="mo7afzat/Alexandria/HTML/Stanley_Bridge.html" class="PTG-item">
+                <img src="mo7afzat/Alexandria/Places/Stanley_Bridge/photo/1.jpg" alt="orange tree" /><p>Stanley Bridge</p>
+            </a>
+            <a href="mo7afzat/giza/places/Giza Pyramids/Giza Pyramids.html" class="PTG-item">
+                <img src="mo7afzat/giza/giza-images/giza.jpg" alt="orange tree" /><p>Giza Pyramids</p>
+            </a>
+            <a href="mo7afzat/Luxor and Aswan/html/Luxer and aswan/karnak.html" class="PTG-item">
+                <img src="mo7afzat/Luxor and Aswan/images/Karnak.jpg" alt="orange tree" /><p>Karnak</p>
+            </a>
+            <a href="mo7afzat/Luxor and Aswan/html/Luxer and aswan/nile.html" class="PTG-item">
+                <img src="mo7afzat/Luxor and Aswan/images/Nile.jpg" alt="orange tree" /><p>River Nile</p>
+            </a>
+        </div>
+        <!-- dlo2ty ha3ml div gowah el elements el hatb2a gowa el drop list bta3et el thinges to do -->
+        <div class="TTD-container" id="TTD-container">
+            <a href="Things To Do/culture.html" class="TTD-item">
+                <img src="Things To Do/img/y.jpg" alt="orange tree" /><p>Cultural Tourism</p>
+            </a>
+            <a href="Things To Do/play.html" class="TTD-item">
+                <img src="Things To Do/img/play.jpg" alt="orange tree" /><p>Leisure Tourism</p>
+            </a>
+            <a href="Things To Do/religon.html" class="TTD-item">
+                <img src="Things To Do/img/menu8.png" alt="orange tree" /><p>Religious Tourism</p>
+            </a>
+            <a href="Things To Do/safari.html" class="TTD-item">
+                <img src="Things To Do/img/Golf.jpg" alt="orange tree" /><p>Safari</p>
+            </a>
+            <a href="Things To Do/therapy.html" class="TTD-item">
+                <img src="Things To Do/img/siwa.jpg" alt="orange tree" /><p>Medical Tourism</p>
+            </a>
+        </div>
+        
+        <header>
+            <video autoplay loop class="Video-background" muted plays-inline>
+                <source src="web project.mp4" type="video/mp4">
+            </video>
+            <div class="Mainpara">
+                <h1 >Welcome To Egypt The Place Where Every Thing Is Possible</h1>
+                <p>Egypt is a place full of magic and scenic views that captivate hearts before eyes, and it has many ancient archaeological sites throughout history, and here we will show you all those places</p>
+            </div>
+        </header>
+        <img src="images/try3.jpg" alt="black-sand" class="try3">
+        <section class="section1">
+           
+            <div class="title">
+                
+                <div class="first ">
+                    <img src="images/Mountain.jpg" class="Mountainimg">
+                    <h1 >Mountains</h1>
+                    <p>Egypt is full of places with high altitudes and high mountains in the Sinai and other places so take a look.</p>
+                    <br><br>
+                    <a href="#">See now..</a>
+                </div>
+                <div class="second">
+                    <img src="images/waterfall.jpg" class="waterfallimg">
+                    <h1 >Waterfalls </h1>
+                    <p>Did you ever know about the existence of waterfalls in Egypt? If this is the first time you hear this, please take a look at them and tell us your personal opinion.</p>
+                    <br>
+                    <a href="#">See now..</a>
+                </div>
+                <div class="third">
+                    <img src="images/road.jpg" class="roadimg">
+                    <h1 >Road Travel</h1>
+                    <p>Egypt is rich in places with beautiful roads and scenery that you can enjoy to the fullest and you will see on your trip that many different archaeological and tourist places.</p>
+                    <br>
+                    <a href="#">See now..</a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end of section 1 -->
+        <section class="section2">
+            <div class="back-page">
+                <br>
+                <h1>DISCOVER THE BEST OF EGYPT</h1>
+                <br>
+                <br>
+                <br>
+                <div class="carousel" data-flickity>
+                    <a href="mo7afzat/Cairo/index.html" class="cell">
+                        <img src="images/Cairo-elAzhar.jpg" alt="orange tree" /><p>Cairo</p>
+                        
+                    </a>
+                    <a href="mo7afzat/giza/giza.html" class="cell">
+                        <img src="images/Giza-pyramids.jpg" alt="One World Trade" /><p>Giza</p>
+                    </a>
+                    <a href="mo7afzat/Alexandria/Alexandria.html" class="cell">
+                        <img src="images/alex-castel.jpg" alt="drizzle" /><p>Alexandria</p>
+                    </a>
+                    <a href="mo7afzat/south of sinaa/south_of_sinaa.html" class="cell">
+                        <img src="images/ganowb-sina.jpg" alt="golden hour" /><p>South of Sinaa</p>
+                    </a>
+                    <a href="mo7afzat/Matruh/index.html" class="cell">
+                        <img src="images/matrouh.jpg" alt="contrail" /><p>Matrouh</p>
+                    </a>
+                    <a href="mo7afzat/Luxor and Aswan/html/Luxer and aswan/Luxor and Aswan.html" class="cell">
+                        <img src="images/Luxor-karnk.jpg" alt="flight formation" /><p>Luxor and Aswan</p>
+                    </a>
+                    <a href="mo7afzat/the red sea/red-sea.html" class="cell">
+                        <img src="images/red-sea.jpg" alt="orange tree" /><p>The Red Sea</p>
+                    </a>
+                    <a href="mo7afzat/Fayyum/Fayyum.html" class="cell">
+                        <img src="images/fayoum-wady-el-raian.jpg" alt="contrail" /><p>Fayoum </p>
+                    
+                    </a>
+                    <a href="mo7afzat/Suez/index.html" class="cell">
+                        <img src="images/suez-ain-so5na.jpg" alt="drizzle" /><p>Suez </p>
+                    </a>
+                    <a href="mo7afzat/Port Said/html/portsaid.html" class="cell">
+                        <img src="mo7afzat/Port Said/images/port.jpg" alt="Alex" /><p>Port Said </p>
+                    </a>
+                    <a href="mo7afzat/Kafr_el-Sheikh/Kafr_el_sheikh.html" class="cell">
+                        <img src="images/kafr-el-sheikh.jpg" alt="flight formation" /><p>Kafr El-Sheikh</p>
+                    </a>
+                </div>
+                <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                <script type="text/javascript">
+                    $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                wrapAround:true,
+                freescroll: true
+                });
+                </script>
+            </div>
+        </section>
+        <!-- end section 2 -->
+        <section class="section3">
+           <div class="contact-us">
+            <div id="contact">
+            <h1 >Contact Us <i class="fa-regular fa-message"></i></h1>
+                <form class="contact-form">
+                    <input type="text" placeholder="Enter your Name"><br>
+                    <input type="email" placeholder="Enter a valid Email"><br>
+                    <textarea name="Contact" id="text-area" cols="50" rows="10" placeholder="Enter Your Message"></textarea>
+                    
+                </form>
+                <input type="submit" class="contact-btn">
+            </div>
+            <img src="images/contact.jpg" class="contact-img">
+           </div> 
+
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="containers">
+                <div class="row">
+                        <div class="footer-col">
+                            <h4>RESOURCES</h4>
+                            <ul>
+                                <li><a href="#">Aplication</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Systems</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>  
+                        </div>
+                        <div class="footer-col">
+                            <h4>PRICING</h4>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Premium plans</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Promotions</a></li>
+                            </ul>  
+                        </div> 
+                        <div class="footer-col">
+                            <h4>COMPANY</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">partnerships</a></li>
+                                <li><a href="#">careers</a></li>
+                                <li><a href="#">press</a></li>
+                            </ul>  
+                        </div> 
+                        <div class="footer-col">
+                            <h4>SOCIAL</h4>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                            </ul>  
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>     
+                </div>   
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</body>
+</html>
